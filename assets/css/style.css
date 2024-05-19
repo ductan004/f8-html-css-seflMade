@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-primary: #1ebfc1;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +13,275 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+
+/* Commom */
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+/* header */
+
+.header {
+    background: #fff;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -40px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 12px;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav {
+    margin-left: 235px;
+    margin-right: auto;
+}
+
+.nav a {
+    color: #2f3a3b;
+    padding: 8px 19.5px;
+    font-size: 1.6rem;
+}
+
+.nav a.active,
+.nav a:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .action {
+    display: flex;
+    align-items: center;
+}
+
+.header .action_link {
+    color: #494949;
+    font-size: 1.6rem;
+}
+
+.header .btn-signUp {
+    min-width: 108px;
+    margin-left: 24px;
+    color: #1ebfc1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 12px 23px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+}
+
+/* hero */
+
+.hero .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 62px;
+}
+
+.hero .info {
+    width: 40%;
+}
+
+.hero .block-image {
+    position: relative;
+    width: 50%;
+}
+
+.hero .info .text {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .heading {
+    margin-top: 18px;
+    font-size: 6.2rem;
+    line-height: 1.116129; /* 116.129% */
+}
+
+.hero .desc {
+    width: 374px;
+    margin-top: 46px;
+    font-size: 1.8rem;
+    line-height: 1.77;
+    color: #9da6a5;
+}
+
+.hero .cta-group {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .cta-group .btn {
+    min-width: 186px;
+    padding: 20px 41px 21px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .cta-group .hero-icons-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .block-image .hero-courses {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    min-width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .courses-icon {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+    border-radius: 3px;
+}
+
+.hero .courses-icon::after {
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    right: 4px;
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.hero .hero-courses .courses-text {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 55px;
+    margin-left: 16px;
+}
+
+.block-image .hero-schedules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px 0;
+    position: absolute;
+    bottom: 46px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    padding: 16px 0 23px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-schedules .schedules-text,
+.hero-avatar .hero-text {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-schedules .progress {
+    width: 74px;
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 3px;
+}
+
+.hero-schedules .progress span {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    background: #fb9899;
+}
+
+.hero-schedules .progress:last-child {
+    width: 26px;
+}
+
+.hero-schedules .progress:first-of-type span {
+    width: 52%;
+}
+
+.hero-schedules .progress:nth-of-type(2) span {
+    width: 69%;
+}
+
+.hero-schedules .progress:nth-of-type(3) span {
+    width: 46%;
+}
+
+.hero .block-image .img-hero {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.hero .hero-avatar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    min-width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    padding: 17px 35px;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-avatar .avatar-group {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero .hero-avatar .avatar-img {
+    width: 33px;
+    height: 33px;
+    margin-left: -7px;
+    border-radius: 50%;
+    object-fit: cover;
 }
