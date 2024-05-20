@@ -98,6 +98,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding-top: 62px;
+    padding-bottom: 79px;
 }
 
 .hero .info {
@@ -284,4 +285,87 @@ a {
     margin-left: -7px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* Features */
+
+.features {
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+.features .features-info {
+    max-width: 51%;
+}
+
+.features .features-info .text {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features-info .heading {
+    margin-top: 18px;
+    font-size: 4.2rem;
+    line-height: 1.33333; /* 133.333% */
+}
+
+.features-info .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+.features .list-features {
+    margin-top: 80px;
+    display: flex;
+}
+
+.list-features .item-feature {
+    width: 20%;
+}
+.list-features .item-feature:first-child {
+    width: 15%;
+    margin-right: 209px;
+}
+
+.list-features .item-feature:nth-child(2) {
+    margin-right: 200px;
+}
+
+.item-feature .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 106px;
+    background: #ffc147;
+    border-radius: 10px;
+}
+
+.item-feature:nth-child(2) .feature-icon {
+    background: #ff947a;
+}
+
+.item-feature:nth-child(3) .feature-icon {
+    background: #bf83ff;
+}
+
+.item-feature .feature-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.item-feature .item-info .title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.item-feature .item-info .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.6875; /* 168.75% */
 }
